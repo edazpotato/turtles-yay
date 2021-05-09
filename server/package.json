@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js",
-		"prod": "pm2 start index.js"
+		"prod": "pm2 start index.js \"Turtle websocket server\""
 	},
 	"author": "Edazpotato",
 	"license": "MIT",
