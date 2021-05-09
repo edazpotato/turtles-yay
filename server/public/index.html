@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Web dashboard</title>
+		<script defer src="dash.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<p style="color: white">
+			&#115;&#97;&#109;&#32;&#119;&#97;&#115;&#32;&#104;&#101;&#114;&#101;
+		</p>
+		<form action="#">
+			<div>
+				<label for="turtles">Choose the turtle to control</label>
+				<select id="turtles"></select>
+				<button id="refresh-turtles" type="button">
+					Refresh turtle list
+				</button>
+			</div>
+
+			<div style="display: flex; flex-direction: column">
+				<label for="code">Put code to run in the turtle here:</label>
+				<textarea
+					id="code"
+					rows="16"
+					cols="60"
+					placeholder="Put lua code here"
+				></textarea>
+			</div>
+
+			<button type="submit">Run code</button>
+			<button id="clear-code" type="button">Clear code</button>
+		</form>
+		<div>
+			<div>
+				<label for="presets">Choose a preset to load</label>
+				<select id="presets"></select>
+				<button id="load-preset" type="button">Load preset</button
+				><button id="clear-presets" type="button">Clear presets</button>
+			</div>
+			<div>
+				<label for="preset-name">Name of preset to save</label>
+				<input
+					autocomplete="none"
+					type="text"
+					id="preset-name"
+					placeholder="Put preset name here"
+				/>
+				<button id="save-preset" type="button">Save preset</button>
+			</div>
+		</div>
+	</body>
+</html>
